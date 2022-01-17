@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- <bean id="tv" class="jaeseon.spring.polymorphism.SamsungTV"> <property 
+		name="speaker" ref="apple" /> <property name="price" value="3000000" /> </bean> 
+		<bean id="sony" class="jaeseon.spring.polymorphism.SonySpeaker" /> <bean 
+		id="apple" class="jaeseon.spring.polymorphism.AppleSpeaker" /> -->
+
+	<!-- @@@@@ List 예제 실습 @@@@@ <bean id="collectionBean" class="jaeseon.spring.collection.CollectionBean"> 
+		<property name="addressList"> <list> <value>서울시 서초구 서초동</value> <value>서울시 
+		동대문구 장안동</value> </list> </property> </bean> -->
+
+	<!-- @@@@@ Map 예제 실습 @@@@@ <bean id="collectionBean" class="jaeseon.spring.collection.CollectionBean"> 
+		<property name="addressList"> <map> <entry> <key> <value>홍길동</value> </key> 
+		<value>율도국</value> </entry> <entry> <key> <value>손오공</value> </key> <value>화과산</value> 
+		</entry> </map> </property> </bean> -->
+
+	<!-- @@@@@ 프로퍼티 예제 실습 @@@@@ <bean id="collectionBean" class="jaeseon.spring.collection.CollectionBean"> 
+		<property name="addressList"> <props> <prop key="홍길동">율도국</prop> <prop key="손오공">화과산</prop> 
+		</props> </property> </bean> -->
+
+	<!-- 컬렉션 빈 실습 <bean id="collectionBean" class="jaeseon.spring.collection.CollectionBean"> 
+		<property name="addressList"> <set> <value>서울시 서초구 서초동</value> <value>서울시 
+		동대문구 장안동</value> <value>서울시 동대문구 장안동</value> <value>서울시 동대문구 장안동</value> 
+		</set> </property> </bean> -->
+
+	<context:component-scan base-package="jaeseon.spring.web"></context:component-scan>
+	
+	
+	<!-- <bean id="userService"
+		class="jaeseon.spring.web.user.impl.UserServiceImpl">
+		<property name="userDAO" ref="userDAO" />
+	</bean>
+	<bean id="userDAO" class="jaeseon.spring.web.user.impl.UserDAO"></bean> -->
+	
+	
+</beans>
